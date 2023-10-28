@@ -3,10 +3,10 @@ import './App.css';
 function App() {
   const [counter, setCounter] = useState(0);
   useEffect(() => {
-    setCounter(5);
+    setCounter(0);
   }, []);
   return (
-    <div>
+    <div className='container'>
       <button onClick={() => setCounter((prevCount) => prevCount - 1)}>
         -
       </button>
